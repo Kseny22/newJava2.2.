@@ -3,10 +3,10 @@ public class Main {
 
 
         System.out.print("На счету у клиента: 100 рублей.");
-        System.out.print("Сумма пополнения счета: 300 рублей.");
+        System.out.print("Сумма пополнения счета:1100 рублей.");
 
 
-        int addend = 300;
+        int addend = 1100;
         int initialBalance = 100;
 
         int bonus = 0;
