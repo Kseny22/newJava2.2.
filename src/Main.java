@@ -2,22 +2,22 @@ public class Main {
     public static void main(String[] args) {
 
 
-        System.out.print("На счету у клиента: 300 рублей.");
-        System.out.print("Сумма пополнения счета: 1700 рублей.");
+        System.out.print("На счету у клиента: 100 рублей.");
+        System.out.print("Сумма пополнения счета: 300 рублей.");
 
 
-        double amount = 1700;
-        double initialAccount = 300;
-        if (amount > 1000) {
+        int addend = 300;
+        int initialBalance = 100;
 
-            int fullHundreds = (int) Math.floor(amount / 100);
-            double bonus = fullHundreds * 1;
-
-
-            double totalAmount = amount + bonus + initialAccount;
+        int bonus = 0;
+        if (addend > 1000) {
+            bonus = addend / 100;
 
 
-            System.out.println("Итоговая сумма на счету клиента: " + totalAmount + "рублей");
+            int finalBalance = addend + bonus + initialBalance;
+
+
+            System.out.println("Итоговая сумма на счету клиента: " + finalBalance + "рублей");
             System.out.println("Количество бонусных рублей: " + bonus + " рублей");
 
 
@@ -27,7 +27,7 @@ public class Main {
             System.out.println("Бонусов нет");
 
 
-            System.out.println("Итоговая сумма на счету клиента; " + amount + " рублей");
+            System.out.println("Итоговая сумма на счету клиента; " + addend + " рублей");
 
 
         }
